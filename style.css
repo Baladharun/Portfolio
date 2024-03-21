@@ -1,0 +1,284 @@
+*
+{
+  margin:0vw;
+}
+
+#navbar,a
+{
+  color: white;
+  text-decoration: solid;
+}
+#navbar{
+  position:fixed;
+}
+.containerd{
+  padding: 100px;
+  display: flex;
+}
+.container-fluid
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+div> .navbar-brand
+{
+  margin-right:1100px;
+}
+#home
+{
+background-color: darkslategray;
+height:720px;
+background-size: cover;
+}
+.btn
+{
+  background-color: white;
+}
+
+#basicIntro h3
+{
+  color:white;
+}
+#navbar {
+  width: 100%;
+}
+
+#dharun {
+  max-width: 100%;
+  height: 400px;
+  margin-top: 20px; 
+  border-radius: 10%;
+}
+
+.svg-frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .svg-frame svg {
+    position: absolute;
+    transition: .5s;
+    z-index: calc(1 - (0.2 * var(--j)));
+    transform-origin: center;
+    width: 344px;
+    height: 344px;
+    fill: none;
+  }
+  
+  .svg-frame:hover svg {
+    transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+  }
+  
+  .svg-frame svg #center {
+    transition: .5s;
+    transform-origin: center;
+  }
+  
+  .svg-frame:hover svg #center {
+    transform: rotate(-30deg) translateX(45px) translateY(-3px);
+  }
+  
+  #out2 {
+    animation: rotate16 7s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  #out3 {
+    animation: rotate16 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    stroke: #ff0;
+  }
+  
+  #inner3,
+  #inner1 {
+    animation: rotate16 4s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  #center1 {
+    fill: #ff0;
+    animation: rotate16 2s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  @keyframes rotate16 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  #about
+  {
+  
+  height:700px;
+  background-color:teal;
+  margin-top: 20px;
+  }
+.row-wise
+{
+  color: rgba(203, 32, 9, 0.819);
+  font-size:larger;
+  padding:3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dharun:hover
+{
+  transform: scale(1.1);
+  transition-delay: 20ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+#projects
+{
+  background-color: lightblue;
+  height:720px;
+}
+@media screen and (max-width: 768px) {
+  #BasicIntro {
+      padding: 10px;
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+  }
+
+  .svg-frame svg {
+      width: 200px;
+      height: 200px;
+  }
+
+  #home {
+    height: auto;
+  }
+
+  #home h1 {
+    font-size: 24px;
+  }
+
+  #home h4 {
+    font-size: 14px;
+  }
+
+  .containers {
+    padding: 20px;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    font-size: 14px;
+  }
+}
+.card {
+  box-sizing: border-box;
+  width: 190px;
+  padding:1vw;
+  height: 254px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+a img{
+  height:80%;
+  width:80%;
+}
+#texts
+{
+  color:beige;
+  font-size: 25px;
+}
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-gray);
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-gray);
+  border-top: 4px solid var(--main-red);
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+#contact
+{
+  background-color: darkslategray;
+}
