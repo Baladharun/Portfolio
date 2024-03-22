@@ -50,6 +50,34 @@ background-size: cover;
   margin-top: 20px; 
   border-radius: 10%;
 }
+/* Add a media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  #navbar {
+    position: relative; /* Change position to relative */
+  }
+  div > .navbar-brand {
+    margin-right: 0; /* Adjust margin */
+  }
+}
+
+@media (max-width: 576px) {
+  #home {
+    height: auto;
+  }
+  #dharun {
+    height: 380px; 
+    max-width: 160px; 
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  #BasicIntro {
+    padding: 15px;
+    font-size: 45px; 
+  }
+}
 
 .svg-frame {
     position: relative;
@@ -128,6 +156,26 @@ background-size: cover;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .containers>.containerd>#anim {
+      display: none;
+      margin:0%;
+      padding: 0%;
+  }
+  .containerd{
+    padding:20px;
+  }
+  .containers>.containerd>#texts
+  {
+    margin-top: 15px;
+    display: inline;
+    text-indent: 10px;
+    align-items: start;
+    padding: 0px;
+    margin:0vw;
+    color: white;
+  }
+}
 #dharun:hover
 {
   transform: scale(1.1);
@@ -138,7 +186,7 @@ background-size: cover;
 #projects
 {
   background-color: lightblue;
-  height:720px;
+  padding:40px;
 }
 @media screen and (max-width: 768px) {
   #BasicIntro {
@@ -180,6 +228,7 @@ background-size: cover;
   box-sizing: border-box;
   width: 190px;
   padding:1vw;
+  margin-bottom: 30px;
   height: 254px;
   background: rgba(217, 217, 217, 0.58);
   border: 1px solid white;
@@ -219,7 +268,7 @@ a img{
   width: 100%;
   height: 80vh;
   padding: 0 2rem;
-  background: var(--main-gray);
+  background:teal;
 }
 
 .contact-section-header > h2 {
@@ -247,7 +296,6 @@ a img{
 
 .contact-details {
   font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
 
@@ -260,8 +308,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
-  background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
+  background: gray;
+  border-top: 4px solid red;
 }
 
 footer > p {
@@ -277,8 +325,4 @@ footer i {
     flex-direction: column;
     text-align: center;
   }
-}
-#contact
-{
-  background-color: darkslategray;
 }
